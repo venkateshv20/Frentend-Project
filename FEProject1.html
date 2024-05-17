@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      /* #nev div {
+        width:10%;
+        display: flex;
+        box-shadow: 0.1px 0.1px 0.px 0px;
+        margin-left: 0%; */
+      
+      #nev{
+        display: flex;
+        width:95%;
+        box-shadow: 0.1% 0% 0% 0.1%;
+      }
+      #nev div h1{
+        width:20%;   
+        font-size:150%;
+        margin:3%;
+
+      }
+      #nev button{   
+        text-align: center;
+        font-size: 18px;
+        padding:5%;
+        border-radius: 35px;
+        background-color:lightseagreen;
+        color: white;
+        margin-left: 7%;
+      }
+      #nev p{
+        width:100%;
+        font-size: 100%;
+        margin:2%;
+        margin-left: 0%;
+        margin:3%;
+        padding:2%;
+        overflow: hidden;
+        font-weight: 0%;
+        margin-top:5%;
+
+      }
+      h1{
+         width:80%;
+          margin-left:10% ;
+          text-align: center;
+          font-size: 70px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      span{
+        color:lightseagreen ;
+      }
+      #pa{
+        width:60%;
+        text-align: center;
+        margin-left: 18%;
+        margin-bottom: 5%;
+        font-size: 25px;
+      }
+        video{
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+        
+            
+        }
+        h2{
+            width:100%;
+            margin-top:15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            padding-top: 4px;
+            margin-left: 25px;
+
+        }
+        p{
+            width:80%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 150%;
+            margin-bottom: 5%;
+            padding: 5%;  
+        }
+        div{
+          width:100%;
+          background-color: white;
+          margin:3%;
+          border-radius: 20px;
+          box-shadow:0px 0px 10px 0.5px;        }
+        .nav{
+          display: flex ;
+          justify-content: space-around;
+          align-items: center;
+        }
+        nav b{
+          font-size: 200%;
+        }
+        nav button{
+          padding: 15%;
+          margin: 9%;
+          border-radius: 30px;
+          border: 1px solid transparent;
+          background-color:turquoise;
+          color: white;
+          margin-top: 10%;
+          font-size:100% ;
+
+        }
+        .center{
+          width: 50%;
+          display: flex;
+          justify-content: space-evenly;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 500;
+        }
+        .vido{
+          width:80%;
+          display: flex;
+          margin-left: 10%;
+          box-shadow: 0.0px 0px 0.0px 0.0px;
+        }                    
+        @media screen and (max-width:600px){
+          .vido{
+            flex-direction: column;
+          } 
+          p{
+            width:90%;
+            font-size: 100%;
+          }
+          .center{
+            display: none;
+            width:25%;
+            font-size: 90%;
+          }
+          h1{
+            
+            font-size: 170%;
+          }
+          h2{
+            font-size: 150%;
+          }
+          #pa{
+            font-size: 120%;
+            margin-left: 14.5%; 
+          }
+          .nav b{
+            font-size: 150%;
+          }
+
+         .nav button{
+            font-size: 70%;
+          }
+          div{
+            margin: 3.5% 0%;
+
+          }
+      }
+    </style>
+</head>
+<body> 
+  <nav class="nav">
+    <nav>
+      <b>lobe</b>
+    </nav>
+    <nav class="center">
+      <a>overview</a>
+      <a>Example</a>
+      <a>Tour</a>
+      <a>Blog</a>
+      <a>Help</a>
+    </nav>
+    <nav>
+    <button>Downlode</button>
+    </nav>
+  </nav>
+    <h1>lobe <span>Examples</span></h1>
+    <p id="pa">One tool, endless possibilities. Discover all the machine learning models you can train with Lobe.</p>
+    <div class="vido">
+        <div>   
+          <video autoplay muted>
+            <source src="https://www.lobe.ai/assets/examples/Plants.mp4" type="video/mp4">
+          </video>
+          <h2>Plant Species</h2>
+          <p>Train your app to distinguish between different species of plants to help people identify poisonous vegetation.</p>
+        </div>
+        <div>
+          <video autoplay muted>
+            <source src="https://www.lobe.ai/assets/examples/Hand%20Count.mp4" type="video/mp4">
+          </video>
+          <h2>Hand Gestures</h2>
+          <p>Train your app to understand the movement of your hand to create new kinds of immersive user experiences.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Feel%20the%20Burn.mp4" type="video/mp4">
+        </video>
+        <h2>Personal Trainer</h2>
+        <p>Train your app to recognize different workout positions to create an automated personal trainer that counts your reps.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Laughing.mp4" type="video/mp4">
+        </video>
+        <h2>Emotional Reactions</h2>
+        <p>Train your app to react to different expressions allowing people to send emoji reactions using just their face.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Painting%20with%20Mike.mp4" type="video/mp4">
+        </video>
+        <h2>Interractive Painting</h2>
+        <p>Train your app to respond with sounds and stories while kids draw to create engaging learning experiences.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Mask%20Up.mp4" type="video/mp4">
+        </video>
+        <h2>Safety Precautions</h2>
+        <p>Train your app to monitor when masks are being correctly worn to help encourage proper safety precautions.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Whales.mp4" type="video/mp4">
+        </video>
+        <h2>Whale Watching</h2>
+        <p>Train your app to detect marine life in tourist photos to help conservationists map and protect the ocean.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Bees.mp4" type="video/mp4">
+        </video>
+        <h2>Beehive Health</h2>
+        <p>Train your app to monitor the entrance of hives to help beekeepers track and analyze the health of their colonies.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Sleeping.mp4" type="video/mp4">
+        </video>
+        <h2>Baby Monitor</h2>
+        <p>Train your app to detect when babies are sleeping or awake to notify parents before they start crying.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Checkout.mp4" type="video/mp4">
+        </video>
+        <h2>Smart Checkout</h2>
+        <p>Train your app to recognize different types of produce to help checkout faster without the need to remember price look-up codes.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Wildfire.mp4" type="video/mp4">
+        </video>
+        <h2>Fire Watch</h2>
+        <p>Train your app to detect smoke and flames using remote cameras to help spot new wildfires before it's too late.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Microscope.mp4" type="video/mp4">
+        </video>
+        <h2>Scientific Research</h2>
+        <p>Train your app to detect organisms under a microscope to help researchers analyze large quantities of scientific samples.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/African%20Wildlife.mp4" type="video/mp4">
+        </video>
+        <h2>Wildlife Behavior</h2>
+        <p>Train your app to detect wildlife behavior with remote cameras to track population and migration patterns over a large area.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Compression.mp4" type="video/mp4">
+        </video>
+        <h2>Equipment Analytics</h2>
+        <p>Train your app to monitor analog gauges and equipment to provide modern digital readouts and real time analytics.</p>
+        </div>
+    </div>
+    <div class="vido">
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Telescope.mp4" type="video/mp4">
+        </video>
+        <h2>Telescopic Imagery</h2>
+        <p>Train your app to recognize different celestial bodies to help astronomers analyze large amounts of telescopic imagery.</p>
+        </div>
+        <div>
+        <video autoplay muted>
+          <source src="https://www.lobe.ai/assets/examples/Deforestation.mp4" type="video/mp4">
+        </video>
+        <h2>Aerial Imagery</h2>
+        <p>Train your app to monitor aerial imagery to gain insights into macro level changes happening around the globe.</p>
+        </div>
+    </div>
+</body>
+</html>

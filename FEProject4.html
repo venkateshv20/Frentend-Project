@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .heading {
+            width: 25%;
+            background-color: lightgray;
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content:space-around;
+             /* align-content: center;  */
+             gap:10%;
+            padding:.9%;
+            border-radius: 20px;
+            margin-top: 2%;
+             margin-left: 36%;  
+            overflow: none;           
+        }
+        .heading span{
+            width:10%;
+            background-color: white;
+            padding: 10% 15% ;
+            border-radius: 30px;
+            height:7%;
+
+        }
+    .head{  
+        text-align: center;
+        font-size: 200%;
+        padding:9%;
+        padding-bottom: 3%;
+        margin: 0% 10% 0% 10%;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .p{
+            display:grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 1%;
+            justify-content: center;
+            font-family:'Courier New', Courier, monospace;
+        }
+        .img{
+            margin-top: 6%;
+          width:98%;
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-gap:1%;
+          margin-bottom:1%;
+          margin-left: .8%;
+        }
+        .img img{
+        width:97%;
+        height:95%;
+        border-radius: 3%;
+        margin: 2%;
+        }
+        .img video{
+            width:97%;
+            height: 95%;
+            border-radius: 15px;
+            margin: 2%;
+        }
+        .p1{
+            margin: 20%;
+        }
+        .p1 h1{
+            text-align: center;
+            
+        }
+        .p1 h1 span{
+            color: gray;
+        }
+        @media screen and (max-width:650px) {
+         .img{
+            display: block;
+         }
+         .head{
+            display: inline;
+           margin-left: 1%;
+           font-size: 50%; 
+         }
+         .heading{
+            width:70%;
+            margin-left: 15%;
+            height: 40px;
+            align-items: center;
+            border-radius: 30px;
+         }
+         .p{
+            font-size: 40%;
+  
+         }
+         .p1{
+            font-size: 50%;
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="f"><span>Home</span></div>
+        <div class="f">Profile</div>
+        <div class="f">contect</div>
+    </div>
+    <div class="head">
+    <h1>A brand and product designer working with clients globally</h1>
+    </div>
+    <div class="p">
+        <p>Expertise</p>
+        <p>Branding</p>
+        <p>Product</p>
+        <p> Design Systems</p>
+    </div>
+    <div class="img">
+        <img src="https://framerusercontent.com/images/kfr022WaJ8YJUyZFmdwCB3pXhs.jpg?scale-down-to=1024" alt="">
+        <img src="https://framerusercontent.com/images/QVKFKT3dyGxloXfzzpurVKNMM6M.jpg?scale-down-to=1024" alt="">
+        <img src="https://framerusercontent.com/images/AX9PukosNfGVcfXw3YapiYpl9g.jpg?scale-down-to=1024" alt="">
+        <img src="https://framerusercontent.com/images/BAXywubxN8sAhfJg3AgGgFI.jpg?scale-down-to=1024" alt="">
+        <video src="https://framerusercontent.com/modules/assets/XuzMZ3Z1QQHKltPqRjzGnsWs27M~Jq48dGctHPeHtnn90xE_Aem-3HQJB_aNVwfu2fao5Ok.mp4" loop="" autoplay="" muted="" playsinline="" style="display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+        <img src="https://framerusercontent.com/images/3WALBX7nnuG7p85CLjlVmWPDHw.jpg?scale-down-to=1024" alt="">
+        <img src="https://framerusercontent.com/images/e3moUZXfgtjYQY4ILakIMaz4n7s.jpg?scale-down-to=2048" alt="">
+        <video src="https://framerusercontent.com/modules/assets/SGjFvgcbK7s4yKh0xwuNjriMNII~5SCIlrVv6SNR5PFMjsMv3qAIi3sYsG2gjdlB0qM-tng.mp4" loop="" autoplay="" muted="" playsinline="" style="display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+        <img src="https://framerusercontent.com/images/aH1eUgCIIIrbJF7TUlaKAehoI.jpg?scale-down-to=1024" alt="">
+        <img src="	https://framerusercontent.com/images/UbS7rWmAwWxjtwM7oaWwRuGo.jpg?scale-down-to=1024" alt="">
+        <img src="https://framerusercontent.com/images/hQVBeiDNGU2TfeDJALuhawlcto.jpg?scale-down-to=1024" alt="">
+        <video src="https://framerusercontent.com/modules/assets/NieGBlxBdgpz9QCHV5Aj89rWjVg~DPEeC0jYyBwx9c865cOkUi-KzBM-3ukyhpgtPhvYo_U.mp4" loop="" autoplay="" muted="" playsinline="" style="display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%"></video>
+    </div>
+    <div class="p1">
+        <div>
+        <h1>Let's work together.</h1>
+        <h1><span>Get in touch.</span></h1>
+        </div>
+    </div>
+
+</body>
+</html>

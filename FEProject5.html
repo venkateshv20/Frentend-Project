@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .h1{
+            font-size: 400%;
+            position: absolute;
+            left: 30%;
+            top: 40%;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; ;
+            color: lightsalmon;
+            font-weight: 200;
+        }
+        .head{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            height: 10%;
+            padding: 1%;
+            grid-gap: 46%;
+            text-align: right;
+        }
+        .head .d1{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap:5%;
+            margin-left: 5%; 
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 130%;
+        }
+        .head .d2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            padding: .1%;
+            margin: 0% 1% 0% 0%;
+
+        }
+        .head .d1 span{
+            color:lightsalmon;
+        }
+        .head .d2 span{
+            color:blue;
+            font-size: 150%;
+        }
+        .head1{
+            width: 16%;
+            padding: 1%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            grid-gap:10%;
+            margin-left: 5%;
+        }
+        .head1 span{
+            color: lightsalmon;
+        }
+        .image img{
+         width:85%;
+         height: 550px;
+         margin-left:5% ;
+        }
+        .para{
+            margin: 0px 20% 0px 20%;
+            padding: 4.5%;
+        }
+        .para .p1{
+            font-size: 29.2px;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 500;
+        }
+        .para .p1 span{
+            color: blue;
+        }
+        .para .p2{
+            font-size:20px;
+            margin-top:3%;
+            font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-weight: 350;    
+        }
+        .para .p3{
+            font-size:20px;
+            margin-top:3%;
+            font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          font-weight: 350;    
+        }
+        .pic{
+            width:58%;
+            height:800px;
+            background-color:rgb(247, 247, 160);
+            border: 1px solid transparent;
+            position: relative;
+            left: 41.5%;
+        }
+        .im1 img{
+         width:73%;
+         height: 60%;
+         position: absolute;
+         right: 90%;
+         top: 18%;
+        }
+        .im2 img{
+            width:60%;
+            height: 35%;
+            position: absolute;
+            left:27%;
+            top:28%;
+        }
+       .video iframe{
+            position:relative;
+            width:63%;
+            height:384px;
+            left: 24.3%;
+        }
+        .video p{
+        margin-left: 24.3%;
+        font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif ;
+        }
+         .pic1{
+        width:59%;
+        height:900px;
+        background-color: rgb(187, 243, 187);
+        border: 1px solid transparent;
+        position: relative;
+        }
+        .im3 img{
+         width: 55%;
+        position: absolute;
+        left: 10%;
+        top:15%
+          }
+        .im4 img{
+        width: 55%;
+        position: absolute;
+        left: 10%;
+        top:55%
+        }
+        .im5 img{
+        width:75%;
+        position: absolute;
+        left: 80%;
+        top:15%
+        }
+        .pic2{
+            width:67%;
+            height: 800px;
+            background-color: rgb(208, 166, 248);
+            margin-left: 17%;
+            position: relative;
+        }
+        .im6 img{
+            width:50%;
+            position: absolute;
+            right: 65%;
+            top:30%;
+        }
+        .im7 img{
+            width:60%;
+            position:absolute;
+            left: 63.5%;
+            top:13%;
+        }
+        .pa1{
+            width:80%;
+            font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+            background-color:rgb(151, 196, 224);
+            font-size: 30px;
+            padding: 5%;
+            margin-left: 5%;
+        }
+         .pa1 .pa2{
+            font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+            text-decoration: none;
+            color: blue;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin:0% 6% 0% 6%;
+            grid-gap: 9%;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            margin-left: 5%;
+            padding: 5.5%; 
+            font-size: 18px;     
+        }
+        .he1{
+            margin-top:10%;
+            margin-left: 12%;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+        }
+        .footer input{
+            margin-top:3%;
+            padding:1% 2%;
+            font-size: 19px;
+            font-family:futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;  
+            background-color: lightgrey;
+            border:1px solid transparent;
+        }
+        .footer button{
+            padding:1% 2%;
+            font-size: 19px;
+            font-family: futura-pt,Avenir,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+            background-color: blue;
+            color: white;
+            border:1px solid transparent;
+        }
+        .footer select{
+            padding: .4% 1.7%;
+            margin-top: 3%;
+            background-color:lightgrey; 
+            border: 1px solid transparent;  
+        }
+        .footer p{
+            margin-top:3%;
+        }
+        @media screen and (max-width:800px) and (min-width:500px) {
+            .h1{
+                font-size: 250%;
+                left:20%;
+            }
+          .image{
+            display: block;
+          }
+          .head1{
+            margin-left: 0%;
+          }
+          .head{
+            display: block;
+            height: 8%;
+            padding: 1%;
+            grid-gap: 35%;
+            text-align: right;
+        }
+        .head .d1{
+            display: none;
+        }
+        .head .d2{
+            display: flex ;
+            padding: .1%;
+            margin: 0% .8% 0% 5%;
+        }
+        .head .d2 span{
+            padding-right: 100px;
+            font-size: 130%;
+        }
+        .head1{
+            width: 12%;
+            padding: 1%;
+            grid-gap:8%;
+            margin-left: 3%;
+        }
+        .image img{
+         width:90%;
+         height: 453px;
+         margin-left:4% ;
+        }
+        .pic{
+            
+            height:600px;
+            position: relative;
+        }
+        .pic1{
+        height:650px;
+        position: relative;
+        }
+        .para{
+            margin: 2% 6%;
+            padding: 3%;
+        }
+        .para .p1{
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .para .p2{
+            font-size:18px;
+            margin-top:2.5%;
+            font-weight: 350;    
+        }
+        .para .p3{
+            font-size:18px;
+            margin-top:2.5%;
+            font-weight: 350;    
+        } 
+        .video iframe{
+            width:55%;
+            height:300px;
+            left:21%;
+        }
+        .video p{
+            margin-left:21%;   
+        }
+        .pic2{
+            width:70%;
+            height: 500px;
+            margin-left: 12%;
+        }
+        .pa1{
+            font-size: 25px;
+        }
+        .pa1 .pa2{
+            font-size: 25px;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 10% 6%;
+            grid-gap: 9%;
+            margin-left: 5%;
+            padding: 5.5%; 
+            font-size: 15px;      
+        }
+        .he1{
+            margin-top:8%;
+            margin-left: 10%; 
+        }
+        .footer input{
+            margin-top:3%;
+            padding:1% 2%;
+            font-size: 15px;  
+        }
+        .footer button{
+            padding:1% 2%;
+            font-size: 15px;  
+        } 
+    } 
+       @media screen and (max-width:499px){
+        .h1{
+          font-size:90%;
+          left:20%;
+        }
+        .image{
+            display: block;
+          }
+          .head{
+            display: block;
+            height: 5%;
+            padding: .5%;
+            grid-gap: 30%;
+            text-align: right;
+        }
+        .head .d1{
+            display: none;
+        }
+        .head .d2{
+            display: flex ;
+            padding: 0%;
+            margin: 0% .5% 0% 3%;
+        }
+        .head .d2 span{
+            padding-right: 0px;
+            font-size: 90%;
+        }
+        .head1{
+            display: none;
+            width: 12%;
+            padding: 1%;
+            grid-gap:8%;
+            margin-left: 3%;
+        }
+        .image img{
+         width:90%;
+         height: 453px;
+         margin-left:4% ;
+        }
+        .pic{
+            
+            height:300px;
+            position: relative;
+        }
+        .pic1{
+        height:350px;
+        position: relative;
+        }
+        .para{
+
+            margin:5%;
+            padding:1%;
+        }
+        .para .p1{
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .para .p2{
+            font-size:13px;
+            margin-top:2.5%;
+            font-weight: 350;    
+        }
+        .para .p3{
+            font-size:13px;
+            margin-top:2.5%;
+            font-weight: 350;    
+        } 
+        .video iframe{
+            width:55%;
+            height:300px;
+            left:15%;
+        }
+        .video p{
+            margin-left:10%;   
+        }
+        .pic2{
+            width:70%;
+            height: 500px;
+            margin-left: 12%;
+        }
+        .pa1{
+            font-size: 25px;
+        }
+        .pa1 .pa2{
+            font-size: 25px;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr ;
+            margin:0% 6% 0% 6%;
+            grid-gap: 9%;
+            margin-left: 5%;
+            padding-bottom: 10%; 
+            font-size: 12px; 
+
+        }
+        .he1{
+            margin-top:8%;
+            margin-left: 10%; 
+        }
+        .footer input{
+            margin-top:3%;
+            padding:1% 2%;
+            font-size: 15px;  
+        }
+        .footer button{
+            padding:1% 2%;
+            font-size: 15px;
+        }  
+       }
+    </style>
+</head>
+<body>
+    <div class="h1">
+      <h1>Ableton</h1>
+    </div>
+   <header class="head">
+     <div class="d1">
+        <p>Live</p>
+        <p>Push</p>
+        <p>Note</p>
+        <p>Link</p>
+        <p>Shop</p>
+        <p>Packs</p>
+        <p>Help</p>
+        <p><span>More+</span></p>
+     </div>
+    <div class="d2">
+        <p><span>Try Live for free</span></p>
+        <p>Log in or register</p>
+    </div>
+   </header>
+   <hr>
+   <div class="head1">
+        <p><span>About</span></p>
+        <p>Job</p>
+        <p>Apprenticeships</p>
+   </div> 
+   <div class="image">
+        <img src="https://ableton-production.imgix.net/about/header.jpg?auto=format&fit=crop&fm=jpg&h=487&ixjsv=1.1.3&w=369" alt="">
+   </div>
+   <div class="para">
+     <div class="p1">
+        We make <span>Live</span>, <span>Push</span> and <span>Link</span> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.
+     </div>
+     <div class="p2">
+        Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community of dedicated musicians, sound designers, and artists from across the world.
+     </div>
+   </div>
+   <div class="pic">
+      <div class="im1">
+        <img src="https://ableton-production.imgix.net/about/photo-1.jpg?fit=crop&h=185&ixjsv=1.1.3&w=185" alt="">
+      </div>
+      <div class="im2">
+       <img src="	https://ableton-production.imgix.net/about/photo-2.jpg?fit=crop&h=111&ixjsv=1.1.3&w=148" alt="">
+      </div>
+   </div>
+   <div class="para">
+      <div class="p1">
+         Making music isn’t easy. It takes time, effort, and learning. But when you’re in the flow, it’s incredibly rewarding.
+      </div>
+      <div class="p2">
+         We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.
+      </div>
+   </div> 
+   <div class="video">
+       <iframe width="" height="" src="https://www.youtube.com/embed/9SbnhgjeyXA" title="Why Ableton - Juanpe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <p>Why Ableton - Juanpe Bolivar</p>
+   </div>
+   <div class="para">
+       <div class="p1">We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.</div>
+       <div class="p2">Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.</div>
+   </div>
+    <div class="pic1">
+       <div class="im3">
+       <img src="https://ableton-production.imgix.net/about/photo-3.jpg?fit=crop&h=111&ixjsv=1.1.3&w=148" alt="">
+       </div>
+       <div class="im4">
+       <img src="https://ableton-production.imgix.net/about/photo-4.jpg?fit=crop&h=111&ixjsv=1.1.3&w=148" alt="">
+       </div>
+       <div class="im5">
+       <img src="https://ableton-production.imgix.net/about/photo-5.jpg?fit=crop&h=185&ixjsv=1.1.3&w=185" alt="">
+       </div>
+    </div>
+    <div class="para">
+       <div class="p1">
+         We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great.
+       </div>
+       <div class="p2">
+         Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.
+       </div>
+    </div>
+    <div class="image">
+        <img src="https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&fit=crop&fm=jpg&ixjsv=1.1.3&w=369" alt="">
+    </div>
+    <div class="para">
+        <div class="p1">We’re passionate about what we do, but we’re equally passionate about improving who we are.</div>
+        <div class="p2">We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.</div>
+        <div class="p3">Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.</div>
+    </div>
+    <div class="pic2">
+        <div class="im6">
+            <img src="https://ableton-production.imgix.net/about/photo-6-a.jpg?fit=crop&h=111&ixjsv=1.1.3&w=148" alt="">
+        </div>
+        <div class="im7">
+            <img src="	https://ableton-production.imgix.net/about/photo-7.jpg?fit=crop&h=185&ixjsv=1.1.3&w=185" alt="">
+        </div>
+    </div>
+    <div class="para">
+        <div class="p1">
+         We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.
+        </div>
+        <div class="p2">
+         If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.
+        </div>
+    </div>
+    <div class="image">
+        <img src="https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&fit=crop&h=222&ixjsv=1.1.3&w=369" alt="">
+    </div>
+        <div class="pa1">
+        <p> We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
+        <a class="pa2" href="">See latest jobs</a></p>
+    </div>
+    <hr>
+       <div class="he1">
+        <h1>Ableton</h1>
+        </div>
+    <div class="footer">
+      <div>
+        <p>Register Live or Push></p>
+        <p>About Ableton></p> 
+        <p>Jobs></p>
+      </div>
+      <div>
+        <h4>Education</h4>
+        <p>Offers for students and teachers></p>
+        <p>Ableton for the Classroom></p>
+        <p>Ableton for Colleges and Universities></p>
+      </div>
+      <div>
+        <h4>Sign up to our newsletter</h4>
+        <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
+        <input type="text" placeholder="Email Address">
+        <button>Sign up</button>
+      </div>
+      <div>
+        <h4>Community</h4>
+        <p>Find Ableton User Groups></p>
+        <p>Find Certified Training></p>
+        <p>Become a Certified Trainer></p>
+      </div>
+      <div>
+        <h4>Language and Location</h4>
+        <select>
+            <option value="1">English</option>
+            <option value="2">Tamil</option>
+            <option value="3">Malayalam</option>
+        </select>
+        <select>
+            <option value="1">India</option>
+            <option value="2">Tamilnadu</option>
+            <option value="3">Kerala</option>
+        </select>
+      </div>
+    </div>
+</body>
+</html>
